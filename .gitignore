@@ -1,0 +1,28 @@
+# RPG Maker MZ - Git Ignore File
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# RPG Maker Temporary Files
+save/
+*.rpgsave
+
+# Node modules (if using plugins with npm)
+node_modules/
+
+# Build artifacts
+*.log
+*.tmp
+
+# Personal notes (optional - remove if you want to share notes)
+notes/
+personal/

@@ -1,0 +1,166 @@
+Family RPG Game Project
+A Collaborative Game Development Summary
+The Vision
+Two families building an RPG game together. One family handles the technical/coding side, the other brings artistic direction and design. Both families' kids contribute ideas, testing, and feedback. This is a hobby project — evenings and weekends, vibe coding with AI assistance for the programming, learning as we go.
+Team & Constraints
+What We Have
+• Family 1: Technical background, some Roblox Studio experience, will handle coding
+• Family 2: Artist/designer background, will direct visual style and create assets
+• Kids from both families for ideas and playtesting
+• AI tools (Claude) for coding assistance
+Realistic Constraints
+• Both families have day jobs — this is evenings/weekends only
+• Neither person is a professional game developer
+• Prefer free tools, willing to pay small amounts if justified
+• Want to work on the project simultaneously when possible
+
+
+Game Engine Options
+We have three main options. Here's an honest comparison:
+Option 1: RPG Maker MV/MZ (2D Top-Down)
+Best for: Getting a playable RPG feeling fastest
+Pros:
+• All RPG systems built in (dialogue, inventory, combat, menus, saving)
+• Visual event system — minimal coding required
+• Huge community with tutorials and free assets
+• Kids can learn the event system easily
+• Claude can write JavaScript plugins when custom features are needed
+Cons:
+• No multiplayer gameplay (single-player only)
+• No real-time collaborative editing
+• Games tend to look like "RPG Maker games"
+• Art must fit specific tile/sprite format constraints
+Cost: $25-40 (Steam sales drop prices significantly)
+Option 2: Godot 4 (2D Top-Down)
+Best for: Learning real game development, maximum creative freedom
+Pros:
+• 100% free, no licensing restrictions
+• Excellent 2D tooling built specifically for this type of game
+• Complete creative freedom over art style and mechanics
+• Skills transfer to other projects and engines
+• Export to PC, web, mobile from same project
+Cons:
+• You build EVERYTHING from scratch (movement, dialogue, inventory, combat, menus, saving)
+• Steeper learning curve
+• No real-time collaborative editing (need Git workflow)
+• Months before you have something that "feels like an RPG"
+Cost: Free
+Option 3: Roblox Studio (3D)
+Best for: Real-time collaboration, kids directly involved in building, multiplayer gameplay
+Important: Choosing Roblox means shifting to a 3D game, not 2D top-down. This is a fundamentally different visual style and gameplay feel.
+Pros:
+• Live collaborative editing — everyone works on the same project simultaneously
+• Built-in multiplayer for free
+• Easy sharing (just send a Roblox link)
+• Kids likely already familiar with the platform
+• Huge asset library and community resources
+Cons:
+• No longer a 2D game — completely different art direction needed
+• Platform lock-in (game only exists on Roblox)
+• Roblox takes ~75% of any revenue
+• Art style constrained to Roblox's aesthetic
+Cost: Free
+
+
+Quick Comparison
+FactorRPG MakerGodotRobloxGame Style2D Top-Down2D Top-Down3DTime to playable RPGFastestSlowestMediumArt style freedomLimited (tile-based)Full freedomRoblox aestheticReal-time collaborationNoNoYes (built-in)Multiplayer gameplayNoPossible (hard)Yes (built-in)Learning curveEasiestSteepestMediumCost$25-40FreeFreeClaude coding supportYes (JavaScript)Yes (GDScript)Yes (Lua)
+
+File Collaboration & Tools by Engine
+How we share files and work together depends heavily on which engine we choose. Here's what each option requires:
+If We Choose: RPG Maker
+File Sharing Method: Google Drive or Dropbox
+RPG Maker projects are self-contained folders. We sync the entire project folder through cloud storage. The key rule: only one person edits at a time, then syncs before the other person starts.
+Required Tools:
+• RPG Maker MV or MZ ($25-40 each, both families need a copy)
+• Google Drive or Dropbox (free)
+• Aseprite or Piskel for custom sprites (free to $20)
+• Shared Google Doc for task tracking and notes (free)
+Workflow:
+1. Before starting work, sync/download the latest project folder
+2. Message the other family that you're working on it
+3. Make your changes
+4. Sync/upload the updated folder
+5. Message that you're done
+Total Cost: ~$50-80 (RPG Maker licenses) + optional art tools
+If We Choose: Godot
+File Sharing Method: GitHub with GitHub Desktop
+Godot projects work well with Git version control. GitHub Desktop provides a visual interface so no command-line knowledge is needed. This allows both families to work on different parts simultaneously without overwriting each other's work.
+Required Tools:
+• Godot 4.3+ (free)
+• GitHub account (free)
+• GitHub Desktop app (free)
+• Git LFS for large art files (free up to 1GB, then $5/month)
+• Aseprite or Krita for 2D art (free to $20)
+Workflow:
+1. Pull latest changes before starting work
+2. Artist works in the assets/sprites folders
+3. Programmer works in the scripts/scenes folders
+4. Commit and push changes when done
+5. Avoid editing the same files — claim files in a shared doc if needed
+Total Cost: $0-25 (optional art tools)
+If We Choose: Roblox Studio
+File Sharing Method: Built-in Team Create (real-time)
+Roblox has real-time collaboration built in. Multiple people can be in the same project at the same time, like Google Docs. No external file sharing needed — everything syncs automatically through Roblox's servers.
+Required Tools:
+• Roblox Studio (free)
+• Roblox account for each person (free)
+• Blender for custom 3D models (free)
+• Optional: Roblox asset packs from the marketplace (varies)
+Workflow:
+1. Owner enables Team Create and invites collaborators
+2. Everyone opens the project in Roblox Studio
+3. Work simultaneously — changes sync in real-time
+4. Communicate via voice chat or Discord while working
+5. Publish when ready to test
+Total Cost: $0 (everything is free)
+
+
+Communication Tools (All Engines)
+Regardless of engine, we'll need ways to communicate and track progress:
+• Group Chat: iMessage, WhatsApp, or Discord for quick coordination
+• Design Doc: Shared Google Doc for game ideas, story, character designs, and decisions
+• Task Tracking: Simple checklist in Google Doc, or Notion if we want something fancier
+• Sync Calls: Weekly or bi-weekly video call to review progress and plan next steps
+Artist Tools by Engine
+RPG MakerGodotRobloxAseprite
+Pixel art sprites & tiles
+$20 or free (compile)Aseprite or Krita
+Any 2D art style
+Free to $20Blender
+3D models & environments
+FreePiskel
+Browser-based pixel art
+FreePhotoshop/Procreate
+If already owned
+VariesRoblox Marketplace
+Pre-made 3D assets
+Free to paid
+
+First Map Concept
+The game starts on a school bus. Players can walk up and down the aisle and interact with students sitting in seats. This is a contained first environment that lets us test movement, collision, and dialogue before building larger areas. The visual style and implementation will depend on which engine we choose.
+
+
+
+Questions We Need to Answer Together
+Before picking an engine, let's align on priorities:
+1. 2D or 3D? Is the 2D top-down style important, or are we open to making a 3D game?
+If 2D matters ? RPG Maker or Godot. If 3D is fine ? Roblox becomes viable.
+2. Do we need multiplayer gameplay (players playing together)?
+If yes ? Roblox is the only realistic option. If no ? RPG Maker or Godot.
+3. What matters more: a "finished feeling" RPG quickly, or learning game dev skills?
+If speed ? RPG Maker. If learning ? Godot or Roblox.
+4. How involved do we want the kids in actual building (not just testing)?
+If very involved ? RPG Maker's event system or Roblox. If mostly adults building ? any engine.
+5. Is simultaneous editing (both families working at the exact same time) important?
+If yes ? only Roblox does this well. If we can take turns ? RPG Maker or Godot work fine.
+Current Recommendation
+If we want a 2D top-down RPG and multiplayer gameplay isn't required, RPG Maker MZ is probably the best fit. It gives us a working RPG feeling fastest, the event system is accessible to everyone, and Claude can write JavaScript plugins when we need custom features. The ~$40 cost per license is worth it for what you get out of the box.
+If we want multiplayer gameplay or real-time collaboration is a must-have, Roblox Studio is the right choice — but we should embrace making a 3D game rather than fighting the engine to make it 2D.
+Proposed Next Steps
+• Review this document together
+• Answer the five questions above
+• Pick an engine
+• Both families install the chosen tool and any required collaboration software
+• Schedule a kickoff call to align on art style and first milestone
+• Start building!
+Questions? Open a conversation with Claude and ask anything — happy to help with all three engines.

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(git --version:*)",
+      "Bash(git lfs version:*)",
+      "Bash(gh:*)",
+      "Bash(winget:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" --version)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth login)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" repo create school-madness --public --description \"Two-family collaborative RPG Maker MZ game - School Bus Adventure\" --clone=false)",
+      "Bash(git init:*)",
+      "Bash(git lfs install:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
