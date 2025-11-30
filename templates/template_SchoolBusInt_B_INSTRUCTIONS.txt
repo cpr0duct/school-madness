@@ -1,0 +1,247 @@
+TEMPLATE CREATION INSTRUCTIONS
+School Bus Interior B Tileset Template
+========================================
+
+CANVAS SPECIFICATIONS:
+--------------------
+
+Dimensions: 768 x 768 pixels
+Grid: 48 x 48 pixels per tile (16 tiles wide x 16 tiles tall)
+Format: PNG
+Color Mode: 8-bit indexed color (256 colors maximum)
+Background: Fully transparent (alpha = 0)
+Interlacing: Non-interlaced
+
+STEP-BY-STEP TEMPLATE CREATION:
+-------------------------------
+
+OPTION A: Using GIMP (Free)
+--------------------------
+1. File → New
+2. Width: 768 pixels
+3. Height: 768 pixels
+4. Advanced Options → Fill with: Transparency
+5. Click OK
+6. Image → Mode → Indexed
+   - Select "Generate optimized palette"
+   - Maximum colors: 256
+7. View → Show Grid
+8. Image → Configure Grid
+   - Width: 48 pixels
+   - Height: 48 pixels
+   - Line style: Solid
+9. View → Snap to Grid (enable this!)
+10. Save as template_SchoolBusInt_B.png
+
+OPTION B: Using Photoshop
+------------------------
+1. File → New
+2. Width: 768 px
+3. Height: 768 px
+4. Background: Transparent
+5. View → Show → Grid
+6. Preferences → Guides, Grid & Slices
+   - Gridline every: 48 pixels
+   - Subdivisions: 1
+7. View → Snap To → Grid
+8. Image → Mode → Indexed Color
+   - Palette: Adaptive
+   - Colors: 256
+9. Save for Web → PNG-8
+
+OPTION C: Using Aseprite ($20)
+-----------------------------
+1. File → New Sprite
+2. Width: 768 px
+3. Height: 768 px
+4. Color Mode: Indexed
+5. Background: Transparent
+6. View → Grid → Grid Settings
+   - Width: 48 px
+   - Height: 48 px
+7. View → Grid → Show Grid
+8. View → Snap to Grid
+9. File → Export → PNG
+
+GRID LAYOUT REFERENCE:
+---------------------
+
+Your 768x768 canvas divided into 48x48 tiles creates a 16x16 grid:
+
+   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+   _______________________________________________
+0 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+1 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+2 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+3 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+4 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+5 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+6 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+7 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+8 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+9 |__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+10|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+11|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+12|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+13|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+14|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+15|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+
+Each __|__ represents one 48x48 pixel tile.
+
+WHAT TO DRAW IN THE TEMPLATE:
+----------------------------
+
+For a SIMPLE PLACEHOLDER school bus interior, create these tiles:
+
+ROW 0-1: Bus Seats (Forward-Facing)
+-----------------------------------
+Columns 0-1: SEAT (Occupied - Top Half)
+  - Draw seat back (green or blue vinyl)
+  - 48px wide x 48px tall
+
+Columns 0-1: SEAT (Occupied - Bottom Half)
+  - Draw seat cushion
+  - 48px wide x 48px tall
+
+This creates a 48x96px (1x2 tile) bus seat.
+
+Make 3-4 variations across the row:
+- Empty seat
+- Seat with simple silhouette of student
+- Seat facing different direction
+- Damaged/worn seat
+
+ROW 2: Floor and Wall Tiles
+---------------------------
+Column 0: Floor tile (repeating pattern)
+  - Simple gray or black rubber floor
+  - Must tile seamlessly when repeated
+
+Column 1: Wall panel
+  - Metal bus interior wall
+  - Light green or cream color
+
+Column 2-3: Additional floor variations
+  - Different wear patterns
+  - Dirt or scuff marks
+
+ROW 3-15: LEAVE EMPTY FOR NOW
+-----------------------------
+These rows are for future expansion:
+- More seat variations
+- Dashboard components
+- Windows
+- Decorative elements
+
+SIMPLE SEAT DESIGN EXAMPLE:
+---------------------------
+
+For a basic forward-facing bus seat:
+
+Top Tile (Seat Back - 48x48px):
+   ________________________________
+  |                                |  ← Top edge (black outline)
+  |  [=======================]     |  ← Seat back (green rectangle)
+  |  [=======================]     |  ← Headrest area
+  |  [=======================]     |  ← Main back section
+  |  [=======================]     |
+  |________________________________|  ← Bottom edge
+
+Bottom Tile (Seat Cushion - 48x48px):
+   ________________________________
+  |  [=======================]     |  ← Top of cushion
+  |  [=======================]     |  ← Main cushion section
+  |  [=======================]     |
+  |   |_______________________|    |  ← Bottom with shadow
+  |________________________________|
+
+Use simple rectangles and 2-3 colors. No complex shading needed!
+
+COLOR PALETTE SUGGESTION:
+-----------------------
+
+Keep it simple for placeholder:
+- Seat vinyl: #4A7C59 (dark green)
+- Floor: #2F2F2F (dark gray)
+- Wall panel: #C8D5B9 (light greenish)
+- Outline/shadows: #1A1A1A (nearly black)
+- Highlights: #FFFFFF (white, sparingly)
+
+Total: ~5-10 colors maximum for simple placeholder
+
+TESTING YOUR TEMPLATE:
+---------------------
+
+Before spending hours on art:
+1. Create just ONE seat (2 tiles)
+2. Create ONE floor tile
+3. Export as PNG with correct settings
+4. Import into RPG Maker MZ
+5. Place on a test map
+6. Verify:
+   - Tiles align correctly
+   - No gaps or overlaps
+   - Colors look right
+   - File imports without errors
+
+If test works, continue with more tiles!
+
+COMMON MISTAKES TO AVOID:
+------------------------
+
+❌ Canvas not exactly 768x768px
+❌ Using 24-bit color instead of 8-bit indexed
+❌ Tiles not aligned to 48px grid
+❌ Semi-transparent pixels (use fully transparent or opaque only)
+❌ Forgetting to enable "Snap to Grid"
+❌ Saving as JPEG instead of PNG
+❌ Making seat too detailed for placeholder (keep it simple!)
+
+FINAL CHECKLIST:
+---------------
+
+Before exporting your tileset:
+☐ Canvas is exactly 768 x 768 pixels
+☐ Grid is enabled and set to 48 x 48 pixels
+☐ Snap to Grid is ON
+☐ Color mode is 8-bit indexed (256 colors max)
+☐ Background is fully transparent
+☐ At least 1 seat design complete
+☐ At least 1 floor tile complete
+☐ Seat is recognizable as a bus seat
+☐ Ready to export as PNG
+
+EXPORT SETTINGS:
+---------------
+
+GIMP:
+- File → Export As
+- Name: template_SchoolBusInt_B.png
+- File Type: PNG
+- Compression: 6-9 (default is fine)
+
+Photoshop:
+- File → Save for Web
+- Format: PNG-8
+- Transparency: ON
+- Colors: 256
+
+Aseprite:
+- File → Export
+- Format: PNG
+- Color Profile: Embedded
+- Layers: Merged
+
+NEXT STEPS:
+----------
+
+1. Save this template file
+2. Use it to create: SchoolBusInt_B.png
+3. Place in: D:\AI\SchoolGame\project\School Madness\img\tilesets\
+4. Test in RPG Maker MZ following the main guide
+5. Iterate based on test results
+
+Good luck! Remember: placeholder quality is fine. Get it working, polish later!
+
+Questions? Ask in Discord #help-needed

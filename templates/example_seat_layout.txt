@@ -1,0 +1,187 @@
+SCHOOL BUS INTERIOR SEAT LAYOUT EXAMPLE
+========================================
+
+This file shows you how to arrange bus seats on your tileset grid.
+
+TILESET GRID LAYOUT (16x16 tiles, each tile is 48x48 pixels):
+-------------------------------------------------------------
+
+Legend:
+[ST] = Seat Top (back of seat)
+[SB] = Seat Bottom (cushion)
+[FL] = Floor tile
+[WL] = Wall panel
+[__] = Empty tile
+
+   Col: 0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15
+      ________________________________________________________________________________
+Row 0: [ST] [ST] [ST] [ST] [FL] [WL] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__]
+Row 1: [SB] [SB] [SB] [SB] [FL] [WL] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__]
+Row 2: [FL] [FL] [FL] [FL] [FL] [FL] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__]
+Row 3: [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__]
+Row 4: [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__] [__]
+      (Rows 5-15: Empty for future use)
+
+EXPLANATION:
+-----------
+
+Row 0-1: Four Bus Seat Variations
+- Column 0-1: Seat Version 1 (forward-facing, empty)
+- Column 2-3: Seat Version 2 (forward-facing, occupied)
+- Column 4-5: Seat Version 3 (rear-facing)
+- Column 6-7: Seat Version 4 (damaged/worn)
+
+Each seat spans 2 tiles vertically:
+- Top tile (Row 0): Seat back
+- Bottom tile (Row 1): Seat cushion
+
+Row 2: Support Tiles
+- Columns 0-5: Floor pattern variations
+  * Use column 0 for main aisle floor
+  * Columns 1-5 for variations (dirty, scuffed, etc.)
+
+Row 3-15: Reserved for Future
+- Leave empty initially
+- Can add later:
+  * Dashboard components
+  * Windows
+  * Door frames
+  * More seat variations
+  * Decorative elements
+
+VISUAL EXAMPLE OF ONE SEAT (Columns 0-1, Rows 0-1):
+--------------------------------------------------
+
+This is what ONE forward-facing bus seat looks like across 2 tiles:
+
+Tile at Row 0, Column 0 (Seat Back - Top):
+   ________________________________________
+  |                                        |
+  |    ╔════════════════════════════╗     |
+  |    ║                            ║     | ← Seat back
+  |    ║    HEADREST AREA           ║     |
+  |    ║                            ║     |
+  |    ║                            ║     |
+  |    ╚════════════════════════════╝     |
+  |________________________________________|
+
+Tile at Row 1, Column 0 (Seat Cushion - Bottom):
+   ________________________________________
+  |    ╔════════════════════════════╗     |
+  |    ║                            ║     | ← Cushion
+  |    ║      SEAT CUSHION          ║     |
+  |    ║                            ║     |
+  |    ╚════════════════════════════╝     |
+  |     \_________________________/       | ← Shadow/base
+  |________________________________________|
+
+SIMPLE DRAWING GUIDE:
+--------------------
+
+For placeholder quality:
+1. Use rectangles for seat shapes
+2. Add simple outline (1-2 pixel black border)
+3. Fill with solid color (no gradients needed)
+4. Add basic shadow at bottom of cushion
+5. Keep it minimal - recognizable is enough!
+
+SEAT TYPES TO CREATE (Priority Order):
+-------------------------------------
+
+1. FORWARD-FACING EMPTY SEAT
+   - Just the seat structure, no occupant
+   - Basic green or blue vinyl color
+   - Columns 0-1 on your tileset
+
+2. FORWARD-FACING OCCUPIED SEAT
+   - Same seat with simple character silhouette
+   - Add basic head/shoulders on seat back
+   - Columns 2-3 on your tileset
+
+3. FLOOR TILE
+   - Simple repeating pattern
+   - Dark gray or black rubber texture
+   - Column 4 (and variations in 5-6)
+
+4. WALL PANEL (Optional for v1)
+   - Metal bus interior wall
+   - Light colored rectangle
+   - Column 7
+
+LATER ADDITIONS (NOT NEEDED FOR FIRST VERSION):
+----------------------------------------------
+
+- Rear-facing seats
+- Damaged seat variations
+- Driver's seat
+- Dashboard
+- Windows
+- Emergency exit
+- Handrails
+
+HOW THIS WILL BE USED IN-GAME:
+-----------------------------
+
+When building the bus interior map in RPG Maker:
+1. Place floor tiles first (creates walkable aisle)
+2. Place seats in rows along sides
+3. Alternate seat directions for variety
+4. Set passability (floor = walkable, seats = blocked)
+
+Example bus layout (view from above in RPG Maker):
+   ___________________________________
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 1
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 2
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 3
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 4
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 5
+  |  [SEAT] [AISLE] [AISLE] [SEAT]  | ← Row 6
+  |___________________________________|
+
+QUICK START MINIMAL TILESET:
+---------------------------
+
+Absolute minimum to create a functional bus interior:
+☐ 1 forward-facing seat (2 tiles: top + bottom)
+☐ 1 floor tile for aisle
+
+That's it! Just 3 tiles total (48x96px seat + 48x48px floor)
+
+This is enough to:
+- Build a simple bus interior map
+- Place repeating seats
+- Have walkable aisle
+- Start testing gameplay
+
+You can add variations and details later!
+
+TESTING YOUR LAYOUT:
+-------------------
+
+After creating your tileset:
+1. Import into RPG Maker MZ
+2. Create small test map (10x10 tiles)
+3. Place 2-3 seats in a row
+4. Place floor between them
+5. Walk around in test mode
+6. Verify:
+   ☐ Seats align properly
+   ☐ No gaps between tiles
+   ☐ Floor tiles repeat seamlessly
+   ☐ Can walk on floor, blocked by seats
+
+If test works, expand to full bus layout!
+
+REMEMBER:
+--------
+
+This is a PLACEHOLDER. Quality bar is:
+- Recognizable as a bus seat? ✓
+- Functions in game? ✓
+- Looks professional? NOT REQUIRED FOR V1
+
+Focus on function first, polish later!
+
+Questions? Reference the main guide or ask in Discord.
+
+Good luck creating your school bus interior!
